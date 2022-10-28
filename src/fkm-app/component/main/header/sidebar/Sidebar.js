@@ -2,6 +2,8 @@ import React from 'react'
 
 import { motion } from "framer-motion"
 
+import { Link } from 'react-router-dom';
+
 import { Box,Grid, Divider,Typography,Avatar,Button,ListItemButton,ListItemIcon,ListItemText,List} from '@mui/material'
 import InboxIcon from '@mui/icons-material/Inbox';
 import StoreIcon from '@mui/icons-material/Store';
@@ -15,13 +17,22 @@ import DiscountIcon from '@mui/icons-material/Discount';
 import BrunchDiningIcon from '@mui/icons-material/BrunchDining';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 
+const menuList = [
+    {
+        link:"/login",
+        menuName:"Dashboard",
+        menuIcon:"<DashboardIcon />" 
+
+    }
+]
+
 const Sidebar = ({togalButton}) => {
 
 
 
   return (
     <Box>
-    { togalButton? <Box component="div" style={{width:"80%", minWidth:"250px", backgroundColor:"#fff",minHeight:"94vh", top:"55px", position:"fixed", zIndex:"9981",left:"-2px",overflow:"auto" }}>
+    { togalButton? <Box component="div" style={{width:"80%", minWidth:"250px", backgroundColor:"#fff",minHeight:"94vh",boxShadow:"0px 0px 28px -3px", top:"55px", position:"fixed", zIndex:"9981",left:"-2px",overflow:"auto" }}>
                     <Box component="div"style={{width:"100%",padding:"20px 10px"}}>
                     <Box component="div" style={{backgroundColor:"#f5f3f3",padding:"10px 20px",borderRadius:"10px"}}>
                         <Grid container justifyContent="space-between" alignItems="center">
@@ -39,20 +50,32 @@ const Sidebar = ({togalButton}) => {
                     </Box>
                     <Box component="div">
                     <List component="nav" aria-label="main mailbox folders" sx={{ width: '100%',}} >
+                        {
+                          menuList.map((item,i)=>
+                          <div key={i+1}>
+                          <Link to={item.link}>
                             <ListItemButton  >
-                                <ListItemIcon>
-                                <DashboardIcon />
-                                </ListItemIcon>
-                                <ListItemText primary="Dashboard" />
+                                    <ListItemIcon>
+                                       {item.menuIcon}
+                                    </ListItemIcon>
+                                    <ListItemText sx={{color:"#000"}} primary={item.menuName} />
                             </ListItemButton>
-                            <Divider />
+                          </Link>
+                          <Divider sx={{opacity:"0.3"}} />
+                          </div>
+                          
+                          )  
+                        }
+                        
+                           
+                          
                             <ListItemButton  >
                                 <ListItemIcon>
                                 <StoreIcon />
                                 </ListItemIcon>
                                 <ListItemText primary="Store" />
                             </ListItemButton>
-                            <Divider sx={{opacity:"0.3"}} />
+                            
                             <ListItemButton  >
                                 <ListItemIcon>
                                 <InboxIcon />
