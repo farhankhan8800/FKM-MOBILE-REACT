@@ -1,0 +1,11 @@
+.drower_box{
+    width: 96%;
+    position: fixed;
+    overflow: auto;
+    bottom: 0;
+    background-color: #fff;
+    top: 55px;
+    padding: 7px 6px;
+    box-shadow: 12px 6px 15px 4px;
+    right: 0;
+}
