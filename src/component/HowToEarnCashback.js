@@ -2,7 +2,7 @@ import React from 'react'
 
 import {Grid,Box,Typography} from '@mui/material';
 import cashbackImage from '../assets/images/money.png'
-import cashBackwork from '../assets/video/cashbackwork.mp4'
+
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
@@ -77,10 +77,11 @@ const HowToEarnCashback = () => {
       </Grid>
       <Box component="div" sx={{ padding:"5px 17px"}}>
         <Box component="div" sx={{borderRadius:"10px",overflow:"hidden",boxShadow:" 0px 0px 6px -2px grey"}}>
-                <video  controls poster='' width="100%" height="100%">
+        <iframe width="100%" height="200px" src="https://www.youtube.com/embed/hkStK-PBO_k?start=2" title="How to work free kaa maal cashback" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                {/* <video  controls poster='' >
                   <source src={cashBackwork} type="video/mp4"/>
                    Your browser does not support the video tag.
-                </video>
+                </video> */}
         </Box>
         <Box component="div" sx={{borderRadius:"10px",bgcolor:"#FFECE2", padding:"20px 17px", marginTop:"20px"}}>
         <div>
