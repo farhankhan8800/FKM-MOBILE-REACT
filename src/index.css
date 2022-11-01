@@ -1,21 +1,19 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
- 
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(./assets/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+body{
+  font-family:Poppins ;
 }
-
 img{
   width: 100%;
 }
@@ -27,6 +25,7 @@ img{
 }
 .Carousel_class .splide__slide img {
   width: 100%;
+  height: 150px;
   border-radius: 7px;
 }
 .Carousel_class .splide__pagination{
@@ -39,7 +38,7 @@ display: none;
  /* deal_of_the_day */
  .deal_of_the_day .splide__slide img{
   width: 100%;
-  border-radius: 7px;
+  border-radius: 6px;
  }
  .deal_of_the_day .splide__pagination{
  display: none;

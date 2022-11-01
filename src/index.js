@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 
 // font 
-import './fkm-app/assets/fonts/Roboto/Roboto-Light.ttf';
+// import './assets/fonts/Roboto/Roboto-Light.ttf';
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 
 
@@ -19,6 +19,11 @@ const theme = createTheme({
     secondary: {
       main: "#fff",
     },
+  },
+  typography:{
+    fontFamily:[
+      "poppins"
+    ].join(","),
   },
 });
 
