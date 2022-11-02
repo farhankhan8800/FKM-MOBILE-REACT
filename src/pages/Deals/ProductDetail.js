@@ -6,6 +6,7 @@ import CashBackClimeCard from "../../component/CashBackClaimCard"
 import {Box, Button, Typography,Grid} from '@mui/material';
 import productImg from "../../assets/images/iPhone.png"
 import brandImage from "../../assets/images/fkm_cover.png"
+import InfoIcon from '@mui/icons-material/Info';
 
 const Deals = () => {
 
@@ -30,7 +31,10 @@ const Deals = () => {
                    </Box>
                    <Box sx={{maxWidth:"350px",margin:"auto",marginTop:"15px",padding:"5px 10px"}} component='div'>
                     <Grid  container justifyContent="space-between"  alignItems="center">
-                        <Grid item><div className={dealsStyle.card_mrp_box}><strong>&#8377; 500 </strong> <span>&#8377; 1000</span></div></Grid>
+                        <Grid item>
+                          <div className={dealsStyle.card_mrp_box}><strong>&#8377; 500 </strong> <span>&#8377; 1000</span></div>
+                          <div className={dealsStyle.card_cashback_tag}><strong>&#8377; 250 </strong> <span> cashback </span><InfoIcon sx={{width:"22px",paddingLeft:"6px",color:"#fd4d4d"}}></InfoIcon> </div>
+                        </Grid>
                         <Grid item>
                             <Box component='div' sx={{maxWidth:"100px"}}>
                                 <img style={{width:"100%"}} src={brandImage} alt=''></img>

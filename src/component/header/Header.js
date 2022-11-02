@@ -12,9 +12,11 @@ import fkmLogo from '../../assets/images/fkm-logo/fkm-logo.png'
 const Header = () => {
   const [sidebarToggle, setSidebarToggle] = useState(false)
 
+ 
+
  const toggleClick = ()=>{
   setSidebarToggle(!sidebarToggle)
- }
+   }
   return (
     <Box sx={{  position:"relative"}} >
       <AppBar  sx={{ flexGrow: 1,maxWidth:"600px", position:"fixed",width:"100%", zIndex:"9999",margin:"auto",left:"0" }} >

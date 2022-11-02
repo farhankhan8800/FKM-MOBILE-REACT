@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Box, Typography,Grid} from '@mui/material';
+import {Box, Typography,Grid, Button} from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
 import StarIcon from '@mui/icons-material/Star';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
@@ -10,6 +10,7 @@ import CashBackClaimCard from '../../../component/CashBackClaimCard';
 
 import stoerImage from "../../../assets/images/fkm_cover.png"
 import SimilarMoreProducts from '../../../component/SimilarMoreProducts';
+
 
 
 const FeaturedStoreCard = () => {
@@ -49,6 +50,30 @@ const FeaturedStoreCard = () => {
             </Grid>
           </Box>
         </Box>
+      </Box>
+      <Box component="div" sx={{margin:"22px 0",padding:"20px 9px",background:"#fff",borderRadius:"5px"}}> 
+        <Typography component="p">Cashback <strong>Rates</strong> </Typography>
+       <Box component="div" sx={{display:"flex",}} >
+        <Box component="div" sx={{display:"flex",flexDirection:"column", alignItems:"center",justifyContent:"center",borderTopLeftRadius: "7px",borderBottomLeftRadius: "7px",margin:" 10px 0",padding:"10px",color:"#fff",backgroundColor:"#f27935",flexBasis:"30%"}}>
+          <strong>&#8377; 500</strong>
+          <Typography component="small" varient="small">Cashback</Typography>
+        </Box>
+        <Box component="div" sx={{display:"flex",flexDirection:'column' ,alignItems:"center",justifyContent:"flex-start",borderTopRightRadius: "7px",borderBottomRightRadius: "7px",margin:" 10px 0",padding:"10px",flexBasis:"70%",border:"2px  dashed #f27935",borderLeft:"none"}}>
+            <strong>valid stawid</strong>
+          <Typography component="small" fontSize="12px"  varient="small">Shop any thins wort 699 in just 199 [enculiding shiping]</Typography>
+        </Box>
+       </Box>
+       <Box component="div" sx={{display:"flex",marginBottom:"15px"}} >
+        <Box component="div" sx={{display:"flex",flexDirection:"column", alignItems:"center",justifyContent:"center",borderTopLeftRadius: "7px",borderBottomLeftRadius: "7px",margin:" 10px 0",padding:"10px",color:"#fff",backgroundColor:"#f27935",flexBasis:"30%"}}>
+          <strong>&#8377; 500</strong>
+          <Typography component="small"  varient="small">Cashback</Typography>
+        </Box>
+        <Box component="div" sx={{display:"flex",flexDirection:'column' ,alignItems:"center",justifyContent:"flex-start",borderTopRightRadius: "7px",borderBottomRightRadius: "7px",margin:" 10px 0",padding:"10px",flexBasis:"70%",border:"2px  dashed #f27935",borderLeft:"none"}}>
+            <strong>valid stawid</strong>
+          <Typography component="small" fontSize="12px" varient="small">Shop any thins wort 699 in just 199 [enculiding shiping]</Typography>
+        </Box>
+       </Box>
+       <Button variant="outlined" sx={{width:"100%"}}>Show more</Button>
       </Box>
         <CashBackClaimCard />
      </Box>

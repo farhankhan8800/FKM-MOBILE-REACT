@@ -29,3 +29,14 @@
   .about_the_deals_tag strong{
     color: rgba(62, 62, 168, 0.521);
   }
+  .card_cashback_tag{
+    padding: 3px 8px;
+    font-size: 13px;
+    border: 1px solid #fd9f9f;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 6px;
+    background: #ffcece;
+    align-items: center;
+    justify-content: space-between;
+  }
