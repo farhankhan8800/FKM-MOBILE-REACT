@@ -35,7 +35,7 @@ const HotDealInternal = () => {
   }
   const style = {
     width: '100%',
-    maxWidth: 360,
+  
     bgcolor: 'background.paper',
   };
   const togalBox={
@@ -43,6 +43,8 @@ const HotDealInternal = () => {
     width: "90%",
     zIndex: 100,
     top: "26%",
+    maxWidth:"360px",
+    background:"#fff",
     left:" 19px",
     borderRadius: "7px",
     boxShadow: "0px 0px 19px -6px grey",

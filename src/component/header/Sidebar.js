@@ -92,7 +92,7 @@ const Sidebar = ({togalButton,closeSidebar}) => {
     <Box >
     { togalButton? <Box  onClick={sidebarClose}  component="div" style={{width:"100%", backgroundColor:"transparent", top:"55px", position:"fixed", zIndex:"9981",left:"-2px",overflow:"auto" }}>
                    
-                    <Box component="div"style={{width:"80%",minWidth:"250px", backgroundColor:"#fff",padding:"20px 10px",minHeight:"94vh",boxShadow:"0px 0px 28px -3px"}}>
+                    <Box component="div"style={{width:"80%",minWidth:"250px",maxWidth:"450px", backgroundColor:"#fff",padding:"20px 10px",minHeight:"94vh",boxShadow:"0px 0px 28px -3px"}}>
                     <Box component="div" style={{backgroundColor:"#f5f3f3",padding:"10px 20px",borderRadius:"10px"}}>
                         <Grid container justifyContent="space-between" alignItems="center">
                          <Grid item> 

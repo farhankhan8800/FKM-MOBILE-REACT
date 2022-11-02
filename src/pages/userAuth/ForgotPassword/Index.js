@@ -42,6 +42,7 @@ const ForgotPassword = () => {
               onChange={forgotPasswordChangeHandler}
               type="text"
               label="Email ID / Mobile Number"
+              placeholder='Email ID / Mobile Number'
               variant="outlined" />
               {
                <p style={{color:"#f27935", paddingLeft:"5px"}}>{email_Mobile_Err?"Please Enter Valid Name":""}</p>

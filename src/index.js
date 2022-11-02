@@ -3,29 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from '@mui/material/styles'
+import theme from "./assets/theme"
 
 
 // font 
 // import './assets/fonts/Roboto/Roboto-Light.ttf';
-import { ThemeProvider, createTheme } from '@mui/material/styles'
 
-
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#f27935",
-    },
-    secondary: {
-      main: "#fff",
-    },
-  },
-  typography:{
-    fontFamily:[
-      "poppins"
-    ].join(","),
-  },
-});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

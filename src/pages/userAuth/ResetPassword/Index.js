@@ -41,6 +41,7 @@ const ResetPassword = () => {
           onChange={newPasswordChangeHandler}
           type="text"
           label="New Password"
+          placeholder='New Password'
           variant="outlined" />
 
            <TextField 
@@ -51,6 +52,7 @@ const ResetPassword = () => {
           onChange={conformPasswordChangeHandler}
           type="text"
           label="Conform Password"
+          placeholder='Conform Password'
           variant="outlined" />
            <Button variant="contained" sx={{width:"100%",letterSpacing:"1px",fontSize:"17px", color:"#fff", fontWeight:"bold", margin:"20px 0"}} type='submit'>Submit</Button>
          </form>
