@@ -11,7 +11,8 @@ const cardCupon = {
   background:" #fff",
   boxShadow:" 0px 1px 22px -6px #ada4a4",
   width: "210px",
-  left: "17%",
+  left: "50%",
+  transform: "translate(-50%,0%)",
   borderRadius: "7px",
 }
 
