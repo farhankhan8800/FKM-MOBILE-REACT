@@ -110,7 +110,7 @@ const CashBackStore = () => {
                                         <Box component='div' sx={{display:"flex",alignItems:"center",justifyContent:"center", width:"100px",padding:"10px"}}>
                                         <img src={item.imgSrc} alt="store" height="30px"  width="100%"/>
                                         </Box>
-                                       <p className={cashBackStoreStyle.cash_back_store_offer} >{item.storeName}</p>
+                                       <p className={cashBackStoreStyle.cash_back_store_offer} ><span style={{color:"red"}}>{item.storeName}</span> Cashback</p>
                                       </CardActionArea>
                                       </a>
                                       </Card>
@@ -138,7 +138,7 @@ const CashBackStore = () => {
                                         <Box component='div' sx={{display:"flex",alignItems:"center",justifyContent:"center", width:"100px",padding:"10px"}}>
                                         <img src={item.imgSrc} alt="store" height="30px"  width="100%"/>
                                         </Box>
-                                       <p className={cashBackStoreStyle.cash_back_store_offer} >{item.storeName}</p>
+                                       <p className={cashBackStoreStyle.cash_back_store_offer} ><span style={{color:"red"}}>{item.storeName} </span>Cashback</p>
                                       </CardActionArea>
                                       </a>
                                       </Card>
@@ -168,7 +168,7 @@ const CashBackStore = () => {
                                     <Box component='div' sx={{display:"flex",alignItems:"center",justifyContent:"center", width:"100px",padding:"10px"}}>
                                     <img src={item.imgSrc} alt="store" height="30px"  width="100%"/>
                                     </Box>
-                                   <p className={cashBackStoreStyle.cash_back_store_offer} >{item.storeName}</p>
+                                   <p className={cashBackStoreStyle.cash_back_store_offer} ><span style={{color:"red"}}>{item.storeName} </span>Cashback</p>
                                   </CardActionArea>
                                   </a>
                                   </Card>
@@ -193,7 +193,7 @@ const CashBackStore = () => {
                                     <Box component='div' sx={{display:"flex",alignItems:"center",justifyContent:"center", width:"100px",padding:"10px"}}>
                                     <img src={item.imgSrc} alt="store" height="30px"  width="100%"/>
                                     </Box>
-                                   <p className={cashBackStoreStyle.cash_back_store_offer} >{item.storeName}</p>
+                                   <p className={cashBackStoreStyle.cash_back_store_offer} ><span style={{color:"red"}}>{item.storeName} </span>Cashback</p>
                                   </CardActionArea>
                                   </a>
                                   </Card>
