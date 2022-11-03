@@ -29,7 +29,7 @@ export const menuList = [
       menuIcon: shopIcon
   },
   {
-      link:"/",
+      link:"/category",
       menuName:"Category",
       menuIcon: categoryIcon
   },

@@ -12,7 +12,6 @@ import {liveDeals} from "../../LodingData/lodingData"
 
 const LiveDeals = () => {
     const options = {
-        perPage: 2,
         gap   : '.9rem',
         drag   : 'free',
         perPage: 2,

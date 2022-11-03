@@ -13,6 +13,9 @@ import AllHotDeals from './pages/Deals/Index';
 import Coupons from "./pages/coupons/Index";
 import FeaturedStoreCard from './pages/coupons/featuredStoreCard/FeaturedStoreCard';
 import Home from "./pages/Home/Index"
+import CouponsCode from './component/CouponsCode';
+import CashbackActivated from './component/CashbackActivated';
+import Category from './pages/Category/Index';
 
 const AppRoutes = () => {
   return (
@@ -28,6 +31,9 @@ const AppRoutes = () => {
       <Route path= "/all-hot-deals" element={<AllHotDeals />} />
       <Route path= "/coupons" element={<Coupons />} />
       <Route path= "/featured-store/:storeId" element={<FeaturedStoreCard />} />
+      <Route path= "/coupon-code/:codeId" element={<CouponsCode />} />
+      <Route path= "/cashback-activated/:codeId" element={<CashbackActivated />} />
+      <Route path= "/category" element={<Category />} />
       <Route path="*" element={<Error />} />
     </Routes>
     </div>
