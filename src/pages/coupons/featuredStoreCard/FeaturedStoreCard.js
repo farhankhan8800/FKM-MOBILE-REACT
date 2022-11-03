@@ -7,9 +7,8 @@ import StarHalfIcon from '@mui/icons-material/StarHalf';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
 
 import CashBackClaimCard from '../../../component/CashBackClaimCard';
-
 import stoerImage from "../../../assets/images/fkm_cover.png"
-import SimilarMoreProducts from '../../../component/SimilarMoreProducts';
+import DealsAndCoupons from './DealsAndCoupons';
 
 
 
@@ -76,7 +75,7 @@ const FeaturedStoreCard = () => {
       </Box>
         <CashBackClaimCard />
      </Box>
-    <SimilarMoreProducts />
+    <DealsAndCoupons />
   </div>
   )
 }

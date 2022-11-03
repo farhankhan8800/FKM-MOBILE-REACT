@@ -9,7 +9,7 @@
 }
 
 body{
-  font-family:Poppins ;
+  font-family:Poppins !important ;
 }
 img{
   width: 100%;

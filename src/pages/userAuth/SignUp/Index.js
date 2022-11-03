@@ -154,8 +154,6 @@ const SignUp = () => {
        {
          showSignUp?<Button variant="contained" disabled sx={{width:"100%", color:"#fff", fontWeight:"bold", margin:"20px 0 10px 0",letterSpacing:"1px",fontSize:"17px"}} type='submit'>Sign Up</Button>:<Button variant="contained" sx={{width:"100%", color:"#fff", fontWeight:"bold", margin:"20px 0 10px 0",letterSpacing:"1px",fontSize:"17px"}} type='submit'>Sign Up</Button>
        }
-           
-
          </form>
          <Box component="div" sx={{padding:"10px 0"}}>
           {
