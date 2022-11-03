@@ -13,8 +13,8 @@ const spanImage = {
   width: "20px",
   float: "right",
   display: "inline-block",
+   margin: " 0 5px",
   paddingTop: "2px",
-  marginLeft: "16px",
 }
 
 const Accordion = styled((props) => (
@@ -77,7 +77,7 @@ const HowToEarnCashback = () => {
       </Grid>
       <Box component="div" sx={{ padding:"5px 17px"}}>
         <Box component="div" sx={{borderRadius:"10px",overflow:"hidden",boxShadow:" 0px 0px 6px -2px grey"}}>
-        <iframe width="100%" height="200px" src="https://www.youtube.com/embed/hkStK-PBO_k?start=2" title="How to work free kaa maal cashback" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="200px" src="https://www.youtube.com/embed/hkStK-PBO_k?start=2" title="How to work free kaa maal cashback" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 {/* <video  controls poster='' >
                   <source src={cashBackwork} type="video/mp4"/>
                    Your browser does not support the video tag.
@@ -87,8 +87,8 @@ const HowToEarnCashback = () => {
         <div>
       <Accordion sx={{borderRadius:"8px"}} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>This is how Cashback works</Typography>
           <span style={spanImage}> <img src={cashbackImage} alt='explane image'></img></span>
+          <Typography>This is how Cashback works</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -101,8 +101,9 @@ const HowToEarnCashback = () => {
       </Accordion>
       <Accordion sx={{borderRadius:"8px"}} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+        <span style={spanImage}> <img  src={cashbackImage} alt='acordion image'></img></span>
           <Typography>Frequaintly ask Quaction</Typography>
-          <span style={spanImage}> <img  src={cashbackImage} alt='acordion image'></img></span>
+      
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -115,8 +116,9 @@ const HowToEarnCashback = () => {
       </Accordion>
       <Accordion sx={{borderRadius:"8px"}} expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+        <span style={spanImage}> <img src={cashbackImage} alt='acordion image'></img></span>
           <Typography>Signup to start Cashback </Typography>
-          <span style={spanImage}> <img src={cashbackImage} alt='acordion image'></img></span>
+        
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

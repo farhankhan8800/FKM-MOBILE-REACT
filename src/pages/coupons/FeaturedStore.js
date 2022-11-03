@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 
-import hotImage from '../../assets/images/hot_burn.png'
+import shopImage from '../../assets/images/restaurant.png'
 import { Grid, Box, Typography } from '@mui/material';
         const banner=[
           {
@@ -51,10 +51,10 @@ const FeaturedStore = () => {
     };
       return (
                 <>
-                 <Grid container sx={{ padding:"13px 3px"}}>
+                 <Grid container sx={{ padding:"13px 3px 2px"}}>
                    <Grid item>
                       <Box component="div" sx={{ width:"30px", marginRight:"10px"}}>
-                        <img src={hotImage} alt="Hot Deal Of the Day"  style={{width:"100%"}}/>
+                        <img src={shopImage} alt="Hot Deal Of the Day"  style={{width:"100%"}}/>
                       </Box>
                    </Grid>
                    <Grid item>

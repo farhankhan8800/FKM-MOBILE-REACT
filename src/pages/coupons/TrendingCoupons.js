@@ -5,7 +5,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 
 
-import hotImage from '../../assets/images/hot_burn.png'
+import priceLabelImage from '../../assets/images/price-label.png'
 import { Grid, Box, Typography, CardActionArea, CardContent,Card } from '@mui/material';
         const banner=[
           {
@@ -54,10 +54,10 @@ const TrendingCoupons = () => {
   return (
     <>
 
-        <Grid container sx={{padding:"13px 3px"}}>
+        <Grid container sx={{padding:"13px 3px 2px"}}>
         <Grid item>
             <Box component="div" sx={{ width:"30px", marginRight:"10px"}}>
-            <img src={hotImage} alt="Hot Deal Of the Day"  style={{width:"100%"}}/>
+            <img src={priceLabelImage} alt="Hot Deal Of the Day"  style={{width:"100%"}}/>
             </Box>
         </Grid>
         <Grid item>

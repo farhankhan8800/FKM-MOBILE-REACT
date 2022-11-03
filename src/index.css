@@ -7,16 +7,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+
 body{
   font-family:Poppins ;
 }
 img{
   width: 100%;
 }
+
   /* start Carousel component */
 .Carousel_class .splide__slide {
   padding: 7px;
@@ -29,7 +27,7 @@ img{
   border-radius: 7px;
 }
 .Carousel_class .splide__pagination{
-  bottom: 20px;
+  bottom: 13px;
 }
 .Carousel_class .splide__arrow{
 display: none;
@@ -60,22 +58,21 @@ display: none;
   }
 
   /* enter_otp_component */
-
-  .enter_otp_component .input_otp_box{
-    width: 40px !important;
-    height: 40px !important;
-    margin-right: 0px !important;
-    border-width: 0px 0px 2px !important;
-  }
-  .enter_otp_component div{
-    display: flex;
-    padding-top: 20px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .enter_otp_component div button{
-    padding: 7px 14px;
-  }
-  a{
-    text-decoration: none;
-  }
+.enter_otp_component .input_otp_box{
+  width: 40px !important;
+  height: 40px !important;
+  margin-right: 0px !important;
+  border-width: 0px 0px 2px !important;
+}
+.enter_otp_component div{
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.enter_otp_component div button{
+  padding: 7px 14px;
+}
+a{
+  text-decoration: none;
+}

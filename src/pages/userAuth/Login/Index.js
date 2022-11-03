@@ -75,6 +75,7 @@ const Login = () => {
               onChange={emailChangeHandler}
               type="text"
               label="Email ID"
+              placeholder='Email ID'
               variant="outlined" />
              <p style={{color:"#f27935", paddingLeft:"5px"}}>{emailErr?"Please Enter Valid Email":""}</p>
             <TextField 
@@ -86,6 +87,7 @@ const Login = () => {
               size="small"
               name="password"
               label="Password"
+              placeholder='Password'
               variant="outlined" />
                 <p style={{color:"#f27935" , paddingLeft:"5px"}}>{passwordErr?"Please Enter Strong Password":""}</p>
                <Box component="div" style={{width:"100%", padding:" 10px 0", textAlign:"right"}}> <Link style={{color:"#4343e9", fontWeight:"bold",textDecoration:"none"}} to="/forgot-password">Forgot Password ?</Link></Box>

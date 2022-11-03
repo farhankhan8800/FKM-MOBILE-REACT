@@ -113,6 +113,7 @@ const SignUp = () => {
           onChange={userNameChangeHandler}
           type="text"
           label="Name"
+          placeholder='Name'
           variant="outlined" />
            <p style={{color:"#f27935", paddingLeft:"5px"}}>{userNameErr?"Please Enter Valid Name":""}</p>
          <TextField 
@@ -124,6 +125,7 @@ const SignUp = () => {
           onChange={emailChangeHandler}
           type="type"
           label="Email ID"
+          placeholder='Email ID'
           variant="outlined" />
            <p style={{color:"#f27935", paddingLeft:"5px"}}>{emailErr?"Please Enter Valid Email":""}</p>
         <TextField 
@@ -135,6 +137,7 @@ const SignUp = () => {
           size="small"
           name="password"
           label="Password"
+          placeholder='Password'
           variant="outlined" />
           <p style={{color:"#f27935", paddingLeft:"5px"}}>{passwordErr?"Please Enter Valid Password":""}</p>
           <TextField 

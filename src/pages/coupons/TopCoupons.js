@@ -3,7 +3,7 @@ import React,{useState} from 'react'
 import hotDealsStyle from "../../component/HotDeals.module.css"
 
 
-import hotImage from '../../assets/images/hot_burn.png'
+import couponImage from '../../assets/images/coupon.png'
 
 import { Grid, Box, Typography, CardActionArea, CardContent,Card, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -129,10 +129,10 @@ const TopCoupons = () => {
   return (
     <>
 
-                <Grid container sx={{ padding:"13px 3px"}}>
+                <Grid container sx={{ padding:"13px 3px 2px"}}>
                    <Grid item>
                       <Box component="div" sx={{ width:"30px", marginRight:"10px"}}>
-                        <img src={hotImage} alt="Hot Deal Of the Day"  style={{width:"100%"}}/>
+                        <img src={couponImage} alt="Hot Deal Of the Day"  style={{width:"100%"}}/>
                       </Box>
                    </Grid>
                    <Grid item>
