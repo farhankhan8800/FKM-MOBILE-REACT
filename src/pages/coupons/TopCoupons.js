@@ -150,7 +150,7 @@ const TopCoupons = () => {
                                         <CardActionArea>
                                         <img style={{borderRadius:"0"}} src={item.src} alt={item.alt}/>
                                         <CardContent sx={{padding:"5px 5px 0"}}>
-                                            <Typography variant="body2" sx={{color:"#000" ,padding:"4px 0",textAlign:"justify"}}>{ item.text} </Typography>
+                                            <Typography variant="body2" sx={{color:"#000" ,padding:"4px 0"}}>{ item.text} </Typography>
                                         </CardContent>
                                         </CardActionArea>
                                     </Link>

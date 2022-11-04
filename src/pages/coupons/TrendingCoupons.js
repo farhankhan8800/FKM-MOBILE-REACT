@@ -76,7 +76,7 @@ const TrendingCoupons = () => {
                                           <CardActionArea>
                                           <img style={{borderRadius:"0"}} src={item.src} alt={item.alt}/>
                                           <CardContent sx={{ padding:"5px 0 0"}}>
-                                              <Typography variant="body2" sx={{color:"#000" ,padding:"4px 0 0",fontSize:"12px",textAlign:"justify"}}>{ item.text} </Typography>
+                                              <Typography variant="body2" sx={{color:"#000" ,padding:"4px 0 0",fontSize:"12px"}}>{ item.text} </Typography>
                                           </CardContent>
                                           </CardActionArea>
                                       </a>

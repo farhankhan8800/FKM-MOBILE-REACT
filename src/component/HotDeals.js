@@ -46,9 +46,10 @@ const HotDeals = () => {
                                 <Box sx={{maxWidth:"167px", marginBottom:"10px ", }} component="div" key={i}>
                                     <Card  sx={{background:"#f1f1f1", border:"1px solid #dfdbdb"}} >
                                     <Link className={hotDealsStyle.card_link} to={`/deal-details/${item.producId}`} >
+                                      <span className={hotDealsStyle.card_cashback}>Cashback</span>
                                         <CardActionArea>
-                                          <Box component='div' sx={{padding:"15px 21px 0px"}}>
-                                          <img src={item.src} alt={item.alt} style={{borderRadius:"7px", height:"92px", width:"120px"}}/>
+                                          <Box component='div' sx={{padding:"23px 21px 0px"}}>
+                                            <img src={item.src} alt={item.alt} style={{borderRadius:"7px", height:"92px", width:"120px"}}/>
                                           </Box>
                                         <CardContent sx={{background:"#f1f1f1", padding:"7px"}}>
                                             <Typography gutterBottom variant="h5" component="div" sx={{color:"#000",marginBottom:"0" }}>{ item.title} </Typography>
