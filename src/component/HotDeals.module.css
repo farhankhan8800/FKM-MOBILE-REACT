@@ -2,8 +2,9 @@
     text-decoration: none;
     border-radius: 10px;
     width: 100%;
+  
     display: inline-block;
-    overflow: hidden;
+ 
     position: relative;
 }
 
@@ -40,4 +41,13 @@
 }
 .flex_div img{
     width: 100%;
+}
+.card_cashback{
+    position: absolute;
+    top: 0;
+    right:0;
+    padding: 2px 5px ;
+    color: #fff;
+    font-size: 10px;
+    background-color: #F27932;
 }

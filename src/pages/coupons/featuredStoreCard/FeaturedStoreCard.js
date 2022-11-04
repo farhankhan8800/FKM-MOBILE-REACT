@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Box, Typography,Grid, Button} from '@mui/material';
+import {Box, Typography,Grid,Button} from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
 import StarIcon from '@mui/icons-material/Star';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
@@ -9,12 +9,12 @@ import StarOutlineIcon from '@mui/icons-material/StarOutline';
 import CashBackClaimCard from '../../../component/CashBackClaimCard';
 import stoerImage from "../../../assets/images/fkm_cover.png"
 import DealsAndCoupons from './DealsAndCoupons';
-
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 const FeaturedStoreCard = () => {
   return (
-    <div style={{paddingTop:"56px"}}>
+    <div style={{paddingTop:"56px",position:"relative"}}>
      <Box component="div"sx={{bgcolor:"#f1f1f1",padding:"70px 20px 20px"}}>
       <Box component="div" sx={{borderRadius:"10px",width:"100%",padding:"32px 24px 24px",bgcolor:"#fff",position:"relative",alignItems:"center",justifyContent:"center",display:"flex",boxShadow: "1px 2px 29px -19px #000"}}>
         <Box component="div" sx={{width:"150px",bgcolor:"#fff",position:"absolute",top:"-42px",padding:"16px",borderRadius:"8px",boxShadow:"1px 1px 22px 18px #f1f1f1"}}>
@@ -71,11 +71,17 @@ const FeaturedStoreCard = () => {
           <Typography component="small" fontSize="12px" varient="small">Shop any thins wort 699 in just 199 [enculiding shiping]</Typography>
         </Box>
        </Box>
-       <Button variant="outlined" sx={{width:"100%"}}>Show more</Button>
+       <Box component='div' width="100%" textAlign="center" justifyContent="center" >
+       <Button variant="contained" sx={{borderRadius:"70px", color:"#fff"}}> <ExpandMoreIcon /></Button>
+       </Box>
+     
       </Box>
         <CashBackClaimCard />
      </Box>
     <DealsAndCoupons />
+    <Box component="div" sx={{position:"Fixed", bottom:"0",left:"0",width:"100%",padding:"4px",bgcolor:"#fff"}}>
+      <Button variant="contained" sx={{width:"100%",color:"#fff"}}>Shope & earn More</Button>
+    </Box>
   </div>
   )
 }
