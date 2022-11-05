@@ -79,8 +79,8 @@ const FeaturedStoreCard = () => {
         <CashBackClaimCard />
      </Box>
     <DealsAndCoupons />
-    <Box component="div" sx={{position:"Fixed", bottom:"0",left:"0",width:"100%",padding:"4px",bgcolor:"#fff"}}>
-      <Button variant="contained" sx={{width:"100%",color:"#fff"}}>Shope & earn More</Button>
+    <Box component="div" sx={{position:"Fixed",width:"100%",textAlign:"center", bottom:"0",left:"0",padding:"4px",bgcolor:"#fff"}}>
+      <Button variant="contained" sx={{width:"100%",maxWidth:"600px",color:"#fff"}}>Shope & earn More</Button>
     </Box>
   </div>
   )
