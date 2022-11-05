@@ -24,7 +24,7 @@ export const menuList = [
       menuIcon: dashboardIcon
   },
   {
-      link:"/",
+      link:"/all-store",
       menuName:"Store",
       menuIcon: shopIcon
   },

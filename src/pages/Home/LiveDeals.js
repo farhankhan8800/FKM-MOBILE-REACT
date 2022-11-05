@@ -45,7 +45,7 @@ const LiveDeals = () => {
                                         <CardActionArea>
                                         <img src={item.src} alt={item.alt}/>
                                         <CardContent sx={{background:"#f1f1f1", padding:"7px"}}>
-                                            <Typography variant="body2" sx={{color:"#000" ,padding:"4px 0"}}>{ item.text} </Typography>
+                                            <Typography variant="body2" sx={{color:"#000" ,padding:"4px 0",fontSize:"11px"}}>{ item.text} </Typography>
                                             <Box component="div" sx={{paddingTop:"4px"}}>
                                                 <strong className={livdealStyle.card_amouunt}>&#8377;{item.mrp}</strong>
                                                 <small className={livdealStyle.card_small_amouunt}>&#8377;{item.mrp}</small>

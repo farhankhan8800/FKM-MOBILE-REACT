@@ -16,6 +16,8 @@ import Home from "./pages/Home/Index"
 import CouponsCode from './component/CouponsCode';
 import CashbackActivated from './component/CashbackActivated';
 import Category from './pages/Category/Index';
+import CategoryDetail from './pages/Category/CategoryDetail';
+import AllStore from "./pages/Store/Index"
 
 const AppRoutes = () => {
   return (
@@ -34,6 +36,9 @@ const AppRoutes = () => {
       <Route path= "/coupon-code/:codeId" element={<CouponsCode />} />
       <Route path= "/cashback-activated/:codeId" element={<CashbackActivated />} />
       <Route path= "/category" element={<Category />} />
+      <Route path= "/category-detail/:categoryId" element={<CategoryDetail />} />
+      <Route path= "/all-store" element={<AllStore />} />
+
       <Route path="*" element={<Error />} />
     </Routes>
     </div>
