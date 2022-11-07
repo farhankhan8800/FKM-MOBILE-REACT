@@ -53,7 +53,7 @@ const HotDeals = () => {
                                           </Box>
                                         <CardContent sx={{background:"#f1f1f1", padding:"7px"}}>
                                             <Typography gutterBottom variant="h5" component="div" sx={{color:"#000",marginBottom:"0" }}>{ item.title} </Typography>
-                                            <Typography variant="body2" sx={{color:"#000" ,padding:"4px 0"}}>{ item.text} </Typography>
+                                            <Typography variant="body2" sx={{color:"#000" ,padding:"4px 0",fontSize:"11px"}}>{ item.text} </Typography>
                                             <Box component="div" sx={{paddingTop:"4px"}}>
                                                 <strong className={hotDealsStyle.card_amouunt}>&#8377;{item.mrp}</strong>
                                                 <small className={hotDealsStyle.card_small_amouunt}>&#8377;{item.mrp}</small>

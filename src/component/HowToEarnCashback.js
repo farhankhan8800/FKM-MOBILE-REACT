@@ -10,7 +10,7 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 
 const spanImage = {
-  width: "20px",
+  width: "15px",
   float: "right",
   display: "inline-block",
    margin: " 0 5px",
@@ -88,10 +88,10 @@ const HowToEarnCashback = () => {
       <Accordion sx={{borderRadius:"8px"}} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
           <span style={spanImage}> <img src={cashbackImage} alt='explane image'></img></span>
-          <Typography>This is how Cashback works</Typography>
+          <Typography fontSize="13px">This is how Cashback works</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography  fontSize="13px"> 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
             sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -102,11 +102,11 @@ const HowToEarnCashback = () => {
       <Accordion sx={{borderRadius:"8px"}} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
         <span style={spanImage}> <img  src={cashbackImage} alt='acordion image'></img></span>
-          <Typography>Frequaintly ask Quaction</Typography>
+          <Typography fontSize="13px">Frequaintly ask Quaction</Typography>
       
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography  fontSize="13px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
             sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -117,11 +117,11 @@ const HowToEarnCashback = () => {
       <Accordion sx={{borderRadius:"8px"}} expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
         <span style={spanImage}> <img src={cashbackImage} alt='acordion image'></img></span>
-          <Typography>Signup to start Cashback </Typography>
+          <Typography  fontSize="13px">Signup to start Cashback </Typography>
         
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography  fontSize="13px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
             sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
